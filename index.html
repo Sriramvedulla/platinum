@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platinum Properties</title>
+    <style>
+      .formgroup {
+        background-color: #74b14e;
+        padding: 20px;
+        width: 60%;
+        margin-left: 19%;
+      }
+      h2 {
+        text-align: center;
+        color: #c21807;
+        font-family: Georgia;
+        background-color: #fff;
+        border-radius: 6px;
+      }
+      table {
+        border: 3px solid white;
+        padding: 4px;
+        width: 97%;
+        border-radius: 6px;
+      }
+      td {
+        font-size: 15px;
+        font-family: Georgia;
+        height: 30px;
+        border: 1px solid gainsboro;
+        background-color: #b98f6a;
+        color: blueviolet;
+        border-radius: 6px;
+      }
+      #property_info,
+      #personal_info,
+      #features_info {
+        color: blueviolet;
+      }
+      #property,
+      #personal,
+      #features,
+      #offers {
+        color: #c21807;
+      }
+      #ptype,
+      #bhk,
+      #status {
+        width: 95%;
+        margin: 4px;
+      }
+      #from,
+      #to {
+        width: 95%;
+        margin: 4px;
+      }
+      #location,
+      #cname,
+      #phno,
+      #email {
+        width: 97%;
+        margin: 2px;
+      }
+      #submit {
+        font-weight: 800;
+        font-size: 15px;
+        font-family: Georgia;
+        color: #c21807;
+        border-radius: 6px;
+        padding: 5px;
+        margin-top: 30px;
+      }
+      #submit:hover {
+        background-color: #c21807;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="formgroup">
+      <h2>Platinum Properties</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><a href="#property" id="property_info">Property-info</a></td>
+            <td><a href="#personal" id="personal_info">Personal-info</a></td>
+            <td><a href="#features" id="features_info">Extra Features</a></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label id="property">Property Information</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ptype">Select property Type:</label><br />
+              <select id="ptype">
+                <option value="Select..">Select..</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Independent House">Independent House</option>
+                <option value="vila">Vila</option>
+                <option value="compact home">Compact Home</option>
+              </select>
+            </td>
+            <td>
+              <label for="bhk">BHK Type</label><br />
+              <select id="bhk">
+                <option value="select..">Select..</option>
+                <option value="1bhk">1BHK</option>
+                <option value="2bhk">2BHK</option>
+                <option value="3bhk">3BHK</option>
+                <option value="4bhk">4BHK</option>
+              </select>
+            </td>
+            <td>
+              <label for="status">Select the possession status</label><br />
+              <select id="status">
+                <option value="select..">Select..</option>
+                <option value="plot">Plot</option>
+                <option value="under construction">Under Construction</option>
+                <option value="semi furnished">Semi Furnished</option>
+                <option value="ready to move">Ready To Move</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Price Range:</td>
+            <td>
+              <label for="from"></label>
+              <input type="text" id="from" placeholder="From" />
+            </td>
+            <td>
+              <label for="to"></label>
+              <input type="text" id="to" placeholder="To" />
+            </td>
+          </tr>
+          <tr>
+            <td>Location:</td>
+            <td colspan="2">
+              <label for="location"></label>
+              <input
+                type="text"
+                id="location"
+                placeholder="Enter the location"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" id="personal">Personal Information</td>
+          </tr>
+          <tr>
+            <td>Customer Name</td>
+            <td colspan="2">
+              <label for="cname"></label>
+              <input
+                type="text"
+                id="cname"
+                placeholder="Enter the customer name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td colspan="2">
+              <label for="phno"></label>
+              <input
+                type="tel"
+                id="phno"
+                placeholder="Enter the phone number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email ID</td>
+            <td colspan="2">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Enter the email id" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <label id="features"> Extra Features</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="parking" name="optional" />
+              <label for="parking">Parking</label>
+            </td>
+            <td>
+              <input type="checkbox" id="swimming pool" name="optional" />
+              <label for="swimming pool">Swimming Pool</label>
+            </td>
+            <td>
+              <input type="checkbox" id="super market" name="optional" />
+              <label for="super market">Super Market</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="park" name="optional" />
+              <label for="park">Park</label>
+            </td>
+            <td>
+              <input type="checkbox" id="library" name="optional" />
+              <label for="library">Library</label>
+            </td>
+            <td>
+              <input type="checkbox" id="play ground" name="optional" />
+              <label for="play ground">Play Ground</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <a href="#submit" id="offers"
+                >**Click here to unlock exclusive offers</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" id="submit" value="CHECK AVAILABILITY" />
+    </form>
+  </body>
+</html>
